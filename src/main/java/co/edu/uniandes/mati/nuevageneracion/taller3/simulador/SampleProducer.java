@@ -41,7 +41,7 @@ public class SampleProducer extends Thread
 
         while (true)
         {
-            int max = 30;
+            int max = 80;
             int min = 12;
 
             String messageStr = Integer.toString(random.nextInt(max + 1 - min) + min);
@@ -71,7 +71,7 @@ public class SampleProducer extends Thread
 
             try
             {
-                sleep(4000);
+                sleep(100);
             }
             catch (InterruptedException e)
             {
